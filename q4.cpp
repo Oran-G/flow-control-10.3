@@ -1,6 +1,7 @@
 void setup() { 
     Serial.begin(9600); 
     pinMode(13, OUTPUT); 
+    int n = 0
 } 
 void loop() { 
     if (analogRead(A0) > 600) 
@@ -14,12 +15,15 @@ void loop() {
         }
         else if (n <= 1024)
         {
-            n = 0
+            n = 0;
         }
         else
         {
-          digitalWrite(13, HIGH)
+          digitalWrite(13, HIGH);
         }
           
-    } 
+    }
+    delay(1);
+    n++;
+     
 } 
