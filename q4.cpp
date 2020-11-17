@@ -1,7 +1,7 @@
 void setup() { 
     Serial.begin(9600); 
     pinMode(13, OUTPUT); 
-    int n = 0
+    int n = 0;
 } 
 void loop() { 
     if (analogRead(A0) > 600) 
